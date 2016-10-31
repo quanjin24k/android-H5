@@ -1,0 +1,43 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	
+	</head>
+	
+<body>
+	
+	<p id='title'>HTML内容显示</p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p id='content'>默认显示内容</p>
+	
+	<button id='btn1'>点击调用java代码</button>
+	<button id='btn2'>点击调用java代码，并传递参数</button>
+</body>
+
+<script type='text/javascript'>
+
+	var title = document.getElementById('title');
+	var content = document.getElementById('content');
+	var btn1 = document.getElementById('btn1');
+	var btn2 = document.getElementById('btn2');
+	
+	function javacalljs() {
+		content.innerHTML = '<br>java调用了JS的无参函数。';
+	}
+		
+	function javacalljswith(arg){
+		content.innerHTML = '参数arg=' + arg;	
+	}
+	
+	btn1.onclick = function() {
+		window.android.h5calljava();
+	}
+	
+	btn2.onclick = function() {
+		window.android.h5calljavawithargs('【H5的参数.】');	
+	}
+</script>
+	
+</html>

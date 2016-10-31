@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.javah5.MainActivity" >
+
+    <TextView
+        android:id="@+id/title_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android" />
+    <Button android:id="@+id/btn_android_to_js_"
+        android:layout_below="@id/title_android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Java调用JS"/>
+    <Button android:id="@+id/btn_android_to_js_args_"
+        android:layout_below="@id/btn_android_to_js_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Java调用JS带参数"/>
+    
+    <TextView android:id="@+id/title_webview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_android_to_js_args_"
+        android:text="webview"
+        android:layout_marginTop="20dp"/>
+    
+    <WebView android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_webview"/>
+    
+    
+
+</RelativeLayout>
